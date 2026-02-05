@@ -3,10 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#070A12" />
+  <meta name="theme-color" content="#05080F" />
   <title>TriState SportPsych | Dr. Mike Gross | Sport Psychology NJ</title>
   <meta name="description" content="Clinical sport psychology by Dr. Mike Gross (PsyD, LPC, CMPC). Mental health & performance for athletes. Short Hills, NJ & Teletherapy. ACT, CBT, Mindfulness." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.ico" sizes="any" />
 
@@ -14,6 +18,8 @@
   <meta property="og:description" content="Elite sport psychology and mental health services. Specialized in ACT, CBT, and Mindfulness." />
   <meta property="og:type" content="website" />
 
+  <link rel="stylesheet" href="styles.css" />
+  
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -38,8 +44,6 @@
     }
   }
   </script>
-
-  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -54,12 +58,16 @@
         </span>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#clinical">Clinical</a>
-        <a href="#performance">Performance</a>
-        <a href="#fees">Fees & FAQ</a>
-        <a class="nav-cta" href="#contact">Book Free Consult</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#clinical" class="nav-link">Clinical</a>
+        <a href="#performance" class="nav-link">Performance</a>
+        <a href="#fees" class="nav-link">Fees & FAQ</a>
+        <a class="nav-cta nav-link" href="#contact">Book Free Consult</a>
       </nav>
     </div>
   </header>
@@ -100,8 +108,9 @@
         <div class="hero-card" aria-label="Director card">
           <div class="card-glass">
             <div class="director">
-              <div class="avatar" role="img" aria-label="Dr. Mike Gross portrait placeholder">
-                 <span class="avatar-fallback">MG</span>
+              
+              <div class="avatar-container">
+                 <img src="https://placehold.co/400x500/1a1a1a/FFF?text=Dr.+Mike" alt="Portrait of Dr. Mike Gross" class="avatar-img" />
               </div>
 
               <div class="director-meta">
@@ -148,42 +157,47 @@
           <h2>About TriState SportPsych</h2>
           <p>
             Our mission is to inspire athletes to connect, enjoy, and achieve mastery by delivering 
-            the newest innovations in sport psychology. We partner with athletes 
-            (youth to professional) to build tools for lifelong wellness.
+            the newest innovations in sport psychology.
           </p>
         </div>
 
-        <div class="grid-2">
-          <article class="panel">
-            <h3>Our Approach</h3>
-            <p>
-              We specialize in Acceptance and Commitment Therapy (ACT), Mindfulness-Based interventions, 
-              and Cognitive Behavioral Therapy (CBT).
-            </p>
-            <ul class="bullets">
-              <li>Understanding the culture of high performance</li>
-              <li>Addressing unique stressors (coaches, injuries, pressure)</li>
-              <li>Building authentic, honest relationships</li>
-            </ul>
-          </article>
+        <div class="grid-2 about-grid">
+          
+          <div class="about-content">
+            <article class="panel">
+              <h3>Our Approach</h3>
+              <p>
+                We specialize in Acceptance and Commitment Therapy (ACT), Mindfulness-Based interventions, 
+                and Cognitive Behavioral Therapy (CBT).
+              </p>
+              <ul class="bullets">
+                <li>Understanding the culture of high performance</li>
+                <li>Addressing unique stressors (coaches, injuries, pressure)</li>
+                <li>Building authentic, honest relationships</li>
+              </ul>
+            </article>
 
-          <article class="panel panel-accent">
-            <h3>Who we work with</h3>
-            <p>
-              Athletes of all ages (Children 6-10, Teens, Adults), Coaches, Parents, and Performing Artists.
-            </p>
-            <p class="soft">
-              Whether you are a youth athlete or an Olympian, we provide tools for life and sport.
-            </p>
+            <article class="panel panel-accent" style="margin-top: 12px;">
+              <h3>Who we work with</h3>
+              <p>
+                Athletes of all ages (Children 6-10, Teens, Adults), Coaches, Parents, and Performing Artists.
+              </p>
+              <div class="chips" aria-label="Common goals">
+                <span class="chip">Anxiety Relief</span>
+                <span class="chip">Confidence</span>
+                <span class="chip">Sleep Optimization</span>
+                <span class="chip">Focus</span>
+              </div>
+            </article>
+          </div>
 
-            <div class="chips" aria-label="Common goals">
-              <span class="chip">Anxiety Relief</span>
-              <span class="chip">Confidence</span>
-              <span class="chip">Sleep Optimization</span>
-              <span class="chip">Emotional Control</span>
-              <span class="chip">Focus</span>
-            </div>
-          </article>
+          <div class="about-image-wrapper">
+             <img src="https://placehold.co/600x600/1e1e2e/FFF?text=Consultation+Session" alt="Dr. Mike working with an athlete" class="about-img" />
+             <div class="img-overlay">
+                <p>"We build tools for life and sport."</p>
+             </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -194,7 +208,6 @@
           <h2>Services</h2>
           <p>
             Available both in-person at Short Hills, NJ and online via secure video.
-            Choose the support that fits your needs.
           </p>
         </div>
 
@@ -248,15 +261,14 @@
             <div class="callout">
               <p class="callout-title">Common issues we address</p>
               <div class="list-grid" role="list">
-                <span role="listitem">Performance Anxiety & Panic</span>
+                <span role="listitem">Performance Anxiety</span>
                 <span role="listitem">Depression & Burnout</span>
-                <span role="listitem">Eating & Weight Disorders</span>
-                <span role="listitem">Body Image Concerns</span>
+                <span role="listitem">Eating Disorders</span>
+                <span role="listitem">Body Image</span>
                 <span role="listitem">Social Anxiety</span>
                 <span role="listitem">Anger Regulation</span>
-                <span role="listitem">Sleep Difficulties</span>
-                <span role="listitem">Relationship Problems</span>
-                <span role="listitem">Injury & Career Transition</span>
+                <span role="listitem">Sleep Issues</span>
+                <span role="listitem">Injury Recovery</span>
               </div>
             </div>
 
@@ -332,36 +344,6 @@
       </div>
     </section>
 
-    <section class="section" id="consulting">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Consulting</p>
-          <h2>Support for teams & organizations.</h2>
-          <p>
-            Dr. Mike regularly consults with athletic teams on mental health,
-            mindfulness, high-performance mental skills, and stress reduction.
-          </p>
-        </div>
-
-        <div class="cards-3">
-          <article class="card card-outline">
-            <h3>Team consultation</h3>
-            <p>Workshops and ongoing programming for athletes and coaches.</p>
-          </article>
-
-          <article class="card card-outline">
-            <h3>Organizational consultation</h3>
-            <p>Strategies tailored to your culture to improve wellness and performance.</p>
-          </article>
-
-          <article class="card card-outline">
-            <h3>Train the trainer</h3>
-            <p>Education for sports medicine personnel and parents on best practices.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="fees">
       <div class="container">
          <div class="split">
@@ -371,14 +353,14 @@
               
               <div class="callout">
                 <div class="list-grid">
-                  <span role="listitem"><strong>Individual Session:</strong> $250</span>
+                  <span role="listitem"><strong>Individual:</strong> $250</span>
                   <span role="listitem"><strong>Insurance:</strong> Out of Network</span>
-                  <span role="listitem"><strong>Sliding Scale:</strong> Apply if eligible</span>
-                  <span role="listitem"><strong>Payments:</strong> Credit Card, HSA/FSA</span>
+                  <span role="listitem"><strong>Sliding Scale:</strong> Available</span>
+                  <span role="listitem"><strong>Payments:</strong> Card, HSA/FSA</span>
                 </div>
                 <p class="form-note" style="margin-top:14px; font-size: 14px; color: var(--muted);">
                   We prioritize elite, private care without insurance constraints. 
-                  We provide full documentation (Superbills) for you to secure potential out-of-network reimbursement from your provider.
+                  We provide full documentation (Superbills) for out-of-network reimbursement.
                 </p>
               </div>
             </div>
@@ -453,20 +435,19 @@
                 <option value="consultation">Free 15-min Consultation</option>
                 <option value="clinical">Clinical Therapy Appointment</option>
                 <option value="performance">Performance Coaching</option>
-                <option value="consulting">Team/Organization Workshop</option>
                 <option value="other">Other Inquiry</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="message">Tell us a bit about why you are reaching out (optional)</label>
+              <label for="message">Tell us a bit about why you are reaching out</label>
               <textarea id="message" name="message" rows="5"></textarea>
             </div>
 
             <button class="btn btn-primary btn-full" type="submit">Send Request</button>
 
             <p class="form-note">
-              By submitting, you agree to be contacted by our team. If this is a medical emergency, please call 911.
+              By submitting, you agree to be contacted by our team. If this is a medical emergency, call 911.
             </p>
           </form>
         </div>
@@ -489,5 +470,36 @@
       </div>
     </footer>
   </main>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    const body = document.body;
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Toggle menu logic
+    navToggle.addEventListener('click', () => {
+      const isOpened = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isOpened);
+      nav.classList.toggle('is-active');
+      navToggle.classList.toggle('is-active');
+      // Prevent scrolling when menu is open
+      if (!isOpened) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = '';
+      }
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-active');
+        navToggle.classList.remove('is-active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        body.style.overflow = '';
+      });
+    });
+  </script>
 </body>
 </html>
