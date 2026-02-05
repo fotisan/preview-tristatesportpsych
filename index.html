@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#05080F" />
+  <meta name="theme-color" content="#F7F5F0" />
   <title>TriState SportPsych | Dr. Mike Gross | Sport Psychology NJ</title>
   <meta name="description" content="Clinical sport psychology by Dr. Mike Gross (PsyD, LPC, CMPC). Mental health & performance for athletes. Short Hills, NJ & Teletherapy." />
   
@@ -140,8 +140,6 @@
               </div>
             </div>
           </div>
-
-          <div class="hero-bg" aria-hidden="true"></div>
         </div>
       </div>
     </section>
@@ -368,14 +366,12 @@
       
         if (!navToggle || !nav) return;
       
-        // Toggle menu logic
         navToggle.addEventListener('click', () => {
           const isOpened = navToggle.getAttribute('aria-expanded') === 'true';
           navToggle.setAttribute('aria-expanded', !isOpened);
           nav.classList.toggle('is-active');
           navToggle.classList.toggle('is-active');
           
-          // Prevent scrolling when menu is open
           if (!isOpened) {
             body.style.overflow = 'hidden';
           } else {
@@ -383,7 +379,6 @@
           }
         });
       
-        // Close menu when a link is clicked
         navLinks.forEach(link => {
           link.addEventListener('click', () => {
             nav.classList.remove('is-active');
