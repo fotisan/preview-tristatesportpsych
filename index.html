@@ -1,440 +1,471 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#fdfcf8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#070A12" />
+  <title>TriState SportPsych | Sport Psychology for Athletes in New Jersey</title>
+  <meta name="description" content="Clinical sport psychology, performance sport psychology, and consulting for athletes. Confidential care for mental health and high performance in New Jersey." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
 
-  <title>Therapy for Anxiety, Trauma & Relationships | Emily Caroline Pernoll, LMFT Santa Monica</title>
-  <meta name="description" content="Specialized therapy for addiction, infidelity, and grief in Santa Monica, CA. A safe space to process trauma and rebuild relationships. In-person & online." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://example.com/" />
-
-  <meta property="og:title" content="Emily Caroline Pernoll, MA, LMFT — Therapy in Santa Monica" />
-  <meta property="og:description" content="You don't have to have it all figured out to begin. Therapy for individuals, couples, and families." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="TriState SportPsych" />
+  <meta property="og:description" content="Sport psychology services for the complete care of athletes." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%237d8c7c' d='M0 0h64v64H0z'/%3E%3Cpath fill='%23fdfcf8' d='M18 44c6.5-14.3 10.4-21 14-21s7.5 6.7 14 21h-6.4c-4-9-6.4-13.8-7.6-13.8S30.4 35 26.4 44H18z'/%3E%3C/svg%3E" />
-
-  <link rel="stylesheet" href="styles.css" />
-
+  <!-- Basic schema (edit if you want more precision later) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Emily Caroline Pernoll, MA, LMFT",
-    "description": "Marriage & Family Therapist specializing in addiction, infidelity, and grief in Santa Monica, CA.",
-    "image": "https://example.com/emily-portrait.webp",
-    "telephone": "+1-310-254-2304",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "270 26th Street, Suite 204",
-      "addressLocality": "Santa Monica",
-      "addressRegion": "CA",
-      "postalCode": "90402",
-      "addressCountry": "US"
-    },
-    "areaServed": ["Santa Monica, CA", "Los Angeles, CA", "Venice, CA", "Brentwood, CA"],
-    "url": "https://example.com/"
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"TriState SportPsych",
+    "description":"Clinical and performance sport psychology plus consulting for athletes.",
+    "telephone":"+1-908-913-0637",
+    "email":"team@tristatesportpsych.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"30 Chatham Road #803",
+      "addressLocality":"Short Hills",
+      "addressRegion":"NJ",
+      "postalCode":"07078",
+      "addressCountry":"US"
+    }
   }
   </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body id="top">
+<body>
+  <a class="skip-link" href="#main">Skip to Main Content</a>
 
-  <header class="site-header" data-header>
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Emily Caroline Pernoll home">
+      <a class="brand" href="#top" aria-label="TriState SportPsych home">
+        <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
-          <span class="brand-name">Emily Caroline Pernoll</span>
-          <span class="brand-sub">MA, LMFT · Lic. #97635</span>
+          <span class="brand-name">TriState SportPsych</span>
+          <span class="brand-sub">Clinical & Performance Sport Psychology</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" id="navToggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
-          <div class="nav-lines"></div>
-        </button>
-
-        <div class="nav-menu" id="navMenu">
-          <a class="nav-link" href="#specialties">Specialties</a>
-          <a class="nav-link" href="#about">About Me</a>
-          <a class="nav-link" href="#fees">Fees</a>
-          <a class="nav-link" href="#faq">FAQ</a>
-          <a class="nav-link" href="#contact">Contact</a>
-
-          <div class="nav-cta">
-            <a class="btn btn-ghost" href="tel:+13102542304">(310) 254-2304</a>
-            <a class="btn btn-primary" href="#contact">Free 15-min consult</a>
-          </div>
-        </div>
+        <a href="#about">About</a>
+        <a href="#clinical">Clinical SportPsych</a>
+        <a href="#performance">Performance SportPsych</a>
+        <a href="#consulting">Consulting</a>
+        <a class="nav-cta" href="#contact">Book an appointment</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Hero">
+    <!-- HERO -->
+    <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="micro">Marriage & Family Therapy · Santa Monica & Online</p>
-
-          <h1 class="h1">
-            You don't have to have it all figured out
-            <span class="h1-soft">to begin.</span>
-          </h1>
-
-          <p class="subhead">
-            If you’re feeling chronically on edge, emotionally flooded, or stuck in patterns that won’t shift, 
-            reaching out is a meaningful first step. Let's uncover the blind spots and find a steadier way forward.
+          <p class="micro">Sport Psychology Services · New Jersey</p>
+          <h1>Complete care for athletes.</h1>
+          <p class="lead">
+            A confidential, comfortable place to work on mental health and performance
+            so you can compete with clarity, resilience, and purpose.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book a free 15-min consultation</a>
-            <a class="btn btn-ghost" href="#specialties">See how I can help</a>
+            <a class="btn btn-primary" href="#contact">Book an appointment</a>
+            <a class="btn btn-ghost" href="#about">Meet the director</a>
           </div>
 
-          <div class="hero-trust">
-            <div class="trust-pill">
-              <span class="trust-icon">✓</span>
-              <span>Verified by Psychology Today</span>
+          <div class="trust-row" aria-label="Credentials highlights">
+            <div class="pill">
+              <span class="pill-dot" aria-hidden="true"></span>
+              Clinical & Sport Psychology
             </div>
-            <div class="trust-pill">
-              <span class="trust-icon">✓</span>
-              <span>Specializing in Addiction & Grief</span>
+            <div class="pill">
+              <span class="pill-dot" aria-hidden="true"></span>
+              Certified Mental Performance Consultant (CMPC)
+            </div>
+            <div class="pill">
+              <span class="pill-dot" aria-hidden="true"></span>
+              Athlete mental health + high performance
             </div>
           </div>
         </div>
 
-        <div class="hero-media">
-          <div class="media-card">
-            <img
-              src="emily-portrait.webp"
-              alt="Portrait of therapist Emily Caroline Pernoll"
-              width="1200"
-              height="1400"
-              loading="eager"
-              decoding="async"
-              class="hero-img"
-            />
+        <div class="hero-card" aria-label="Director card">
+          <div class="card-glass">
+            <div class="director">
+              <div class="avatar" role="img" aria-label="Dr. Mike Gross portrait placeholder">
+                <!-- Replace with real image:
+                <img src="mike_gross.jpg" alt="Dr. Mike Gross" width="520" height="620" loading="lazy" decoding="async" />
+                -->
+                <span class="avatar-fallback">MG</span>
+              </div>
+
+              <div class="director-meta">
+                <p class="kicker">Meet our Director</p>
+                <h2 class="h2">Dr. Mike Gross</h2>
+                <p class="meta">
+                  Clinical & Sport Psychologist · CMPC<br />
+                  Founder & Director, TriState SportPsych<br />
+                  Head of Sport Psychology Services, Princeton University
+                </p>
+
+                <div class="mini-actions">
+                  <a class="link" href="#about">Read more</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <a class="link" href="#contact">Get in touch</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-stats" aria-label="Practice promise">
+              <div class="stat">
+                <p class="stat-title">Confidential</p>
+                <p class="stat-text">A space that feels safe to be honest.</p>
+              </div>
+              <div class="stat">
+                <p class="stat-title">Grounded in science</p>
+                <p class="stat-text">High performance, mindfulness, values-based work.</p>
+              </div>
+              <div class="stat">
+                <p class="stat-title">For every level</p>
+                <p class="stat-text">Youth to Olympic, athletes and performing artists.</p>
+              </div>
+            </div>
           </div>
+
+          <div class="hero-bg" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <section class="strip" aria-label="Core issues">
-      <div class="container strip-inner">
-        <p class="strip-title">Common reasons people reach out:</p>
-        <div class="strip-chips" role="list">
-          <span class="chip" role="listitem">Anxiety & Overwhelm</span>
-          <span class="chip" role="listitem">Infidelity Recovery</span>
-          <span class="chip" role="listitem">Addiction Patterns</span>
-          <span class="chip" role="listitem">Grief & Loss</span>
-          <span class="chip" role="listitem">Relationship Conflict</span>
-          <span class="chip" role="listitem">Trauma Responses</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="specialties" aria-label="Specialties">
+    <!-- ABOUT -->
+    <section class="section" id="about">
       <div class="container">
         <div class="section-head">
-          <h2 class="h2">Focused support for heavy things.</h2>
-          <p class="lead">
-            Some life events shake the foundation. My practice is designed to handle the weight of these specific challenges.
+          <h2>About TriState SportPsych</h2>
+          <p>
+            We formed TriState SportPsych with the belief that athletes benefit from a confidential,
+            comfortable place to explore life both inside and outside of sport. At the heart of our work
+            is helping you build a better athletic and personal life, healthier relationships, more balance,
+            and greater purpose.
           </p>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <span class="card-icon">❤️‍🩹</span>
-            <h3 class="h3">Infidelity & Trust Repair</h3>
-            <p class="p">
-              When trust is broken, it can feel like the ground has disappeared. We work on stabilizing the crisis, understanding the rupture, and determining if and how a new relationship can be built.
+        <div class="grid-2">
+          <article class="panel">
+            <h3>Our mission</h3>
+            <p>
+              Inspire athletes and those around them to connect, enjoy, and achieve by delivering
+              the newest innovations in the rapidly evolving field of sport psychology.
             </p>
+            <ul class="bullets">
+              <li>We understand the positives and negatives of athletic culture</li>
+              <li>We understand the unique stressors athletes face</li>
+              <li>We prioritize healthy, honest, authentic relationships</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <span class="card-icon">🌀</span>
-            <h3 class="h3">Addiction & Cycles</h3>
-            <p class="p">
-              Whether it's substance use or behavioral patterns, we look beyond the symptom. We address the underlying pain and build the skills needed for lasting sobriety and emotional regulation.
+          <article class="panel panel-accent">
+            <h3>Who we work with</h3>
+            <p>
+              Professional athletes, youth athletes, high school athletes, college athletes, Olympic athletes,
+              coaches, parents, and other performing artists.
             </p>
-          </article>
+            <p class="soft">
+              Specializations include mindfulness- and acceptance-based interventions for mental health and performance.
+            </p>
 
-          <article class="card">
-            <span class="card-icon">🕊️</span>
-            <h3 class="h3">Grief & Loss</h3>
-            <p class="p">
-              Grief doesn't have a timeline. I offer a patient space to process loss, anger, and emptiness, helping you integrate the experience without pressure to "move on" before you're ready.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="card-icon">🌱</span>
-            <h3 class="h3">Anxiety & Trauma</h3>
-            <p class="p">
-              For those feeling "on edge" or disconnected. We use somatic and mindfulness tools to calm the nervous system, so you can stop just surviving and start living again.
-            </p>
+            <div class="chips" aria-label="Common goals">
+              <span class="chip">Confidence</span>
+              <span class="chip">Resilience</span>
+              <span class="chip">Mindfulness</span>
+              <span class="chip">Stress reduction</span>
+              <span class="chip">Balance</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt-bg" id="about" aria-label="About Emily">
-      <div class="container two-col">
-        <div>
-          <h2 class="h2">Real change, not just talk.</h2>
-          <p class="p">
-            I am an integrative therapist, which means I don't force you into a one-size-fits-all box. 
-            I combine <strong>insight</strong> (understanding your story) with <strong>action</strong> (practical skills).
-          </p>
-          <p class="p">
-            We might use <strong>Somatic Awareness</strong> to help you feel safe in your body again, or look at <strong>Relational Patterns</strong> to see why certain dynamics keep repeating.
-          </p>
-          <p class="p">
-            My goal is to help you uncover the "blind spots"—the unconscious habits that shape your journey—so you can finally choose a different path.
-          </p>
-          
-          <div class="quiet">
-            <p class="quiet-title">My Background</p>
-            <p class="p">
-              MA in Psychology · Licensed Marriage & Family Therapist (LMFT #97635) · 
-              Graduated from Pacifica Graduate Institute (2011).
-            </p>
-          </div>
-        </div>
-
-        <div class="glance-box">
-          <h3 class="h3">At a glance</h3>
-          <ul class="check-list">
-            <li><strong>Clients:</strong> Individuals, Couples, Families</li>
-            <li><strong>Ages:</strong> Pre-teens, Teens, Adults</li>
-            <li><strong>Format:</strong> In-person (Santa Monica) & Online</li>
-            <li><strong>Style:</strong> Warm, Collaborative, Direct</li>
-          </ul>
-          <a class="btn btn-primary btn-full" href="#contact">Ask me a question</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section visual-break">
-      <div class="container">
-        <div class="visual-text centered">
-          <h2 class="h2">A Sanctuary for Healing</h2>
-          <p class="lead">
-            Your environment matters. The office is designed to be a safe, neutral space where you can pause the noise of the outside world and focus inward.
-          </p>
-        </div>
-
-        <div class="image-grid">
-           <img src="therapy-space-1.webp" alt="Calming therapy office interior" class="visual-img" loading="lazy">
-          <img src="therapy-space-2.webp" alt="Details of the therapy room" class="visual-img" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="fees" aria-label="Fees">
+    <!-- SERVICES -->
+    <section class="section" aria-label="Services overview">
       <div class="container">
         <div class="section-head">
-          <h2 class="h2">Fees & Insurance</h2>
-          <p class="lead">Investing in your mental health should be transparent.</p>
+          <h2>Services</h2>
+          <p>
+            Choose the support that fits your needs right now. You don’t need to have it all figured out
+            before reaching out.
+          </p>
         </div>
 
-        <div class="fees">
-          <div class="fee-card">
-            <p class="fee-k">Individual Therapy</p>
-            <p class="fee-v">$250</p>
-            <p class="fee-note">50-minute session</p>
-          </div>
+        <div class="cards-3">
+          <article class="card">
+            <div class="card-top">
+              <span class="badge">Clinical</span>
+              <h3>Clinical SportPsych</h3>
+              <p>
+                Promoting psychological health and emotional wellness with personal counseling
+                for common concerns faced by athletes.
+              </p>
+            </div>
+            <a class="card-link" href="#clinical">More info</a>
+          </article>
 
-          <div class="fee-card">
-            <p class="fee-k">Couples Therapy</p>
-            <p class="fee-v">$325</p>
-            <p class="fee-note">Extended sessions available</p>
-          </div>
+          <article class="card">
+            <div class="card-top">
+              <span class="badge badge-2">Performance</span>
+              <h3>Performance SportPsych</h3>
+              <p>
+                Grounded in the science of high performance and focused on the process
+                of obtaining athletic success across ages and levels.
+              </p>
+            </div>
+            <a class="card-link" href="#performance">More info</a>
+          </article>
 
-          <div class="fee-card">
-            <p class="fee-k">Grief Recovery Group</p>
-            <p class="fee-v">$70–$80</p>
-            <p class="fee-note">Per group session</p>
-          </div>
-        </div>
-
-        <div class="payment-info">
-          <div class="info-block">
-            <strong>Payment Methods</strong>
-            <p>American Express, Mastercard, Visa, Cash, Check.</p>
-          </div>
-          <div class="info-block">
-            <strong>Insurance</strong>
-            <p>I am an Out-of-Network provider. If you have PPO insurance, I can provide a "Superbill" for you to submit for potential reimbursement.</p>
-          </div>
-          <div class="info-block">
-            <strong>Sliding Scale</strong>
-            <p>Limited spots available for those in financial need. Please ask.</p>
-          </div>
+          <article class="card">
+            <div class="card-top">
+              <span class="badge badge-3">Consulting</span>
+              <h3>Teams & Organizations</h3>
+              <p>
+                Workshops, presentations, and ongoing programming for mental health support,
+                mindfulness, mental skills, and stress reduction.
+              </p>
+            </div>
+            <a class="card-link" href="#consulting">More info</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt-bg" id="faq" aria-label="FAQ">
+    <!-- CLINICAL -->
+    <section class="section" id="clinical">
+      <div class="container">
+        <div class="split">
+          <div class="split-copy">
+            <p class="eyebrow">Clinical SportPsych</p>
+            <h2>Support for athlete mental health.</h2>
+            <p class="lead-2">
+              Personal counseling sessions to help athletes live more fully, on and off the field.
+            </p>
+
+            <div class="callout">
+              <p class="callout-title">Common issues we address</p>
+              <div class="list-grid" role="list">
+                <span role="listitem">Eating & weight concerns</span>
+                <span role="listitem">Body image concerns</span>
+                <span role="listitem">Depression</span>
+                <span role="listitem">Social anxiety</span>
+                <span role="listitem">Generalized anxiety / excessive worry</span>
+                <span role="listitem">Stress management</span>
+                <span role="listitem">Panic attacks</span>
+                <span role="listitem">Intrusive thoughts & compulsions</span>
+                <span role="listitem">Transitional issues (college to pro)</span>
+                <span role="listitem">Sleep difficulties</span>
+                <span role="listitem">Relationship issues</span>
+                <span role="listitem">Substance use</span>
+                <span role="listitem">Career termination (retiring)</span>
+                <span role="listitem">Coping with injury</span>
+              </div>
+            </div>
+
+            <div class="inline-actions">
+              <a class="btn btn-primary" href="#contact">Get in touch</a>
+              <a class="btn btn-ghost" href="#performance">Explore performance support</a>
+            </div>
+          </div>
+
+          <aside class="split-aside" aria-label="Clinical highlight">
+            <div class="aside-card">
+              <h3 class="aside-title">A calmer nervous system. A clearer mind.</h3>
+              <p class="soft">
+                The goal isn’t to “feel nothing.” It’s to build skills that help you respond
+                to pressure with steadiness and self-trust.
+              </p>
+
+              <div class="aside-points">
+                <div class="point">
+                  <span class="icon" aria-hidden="true">◎</span>
+                  <p>Confidential, athlete-centered care</p>
+                </div>
+                <div class="point">
+                  <span class="icon" aria-hidden="true">◎</span>
+                  <p>Practical tools you can use immediately</p>
+                </div>
+                <div class="point">
+                  <span class="icon" aria-hidden="true">◎</span>
+                  <p>Aligned with your values and goals</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE -->
+    <section class="section" id="performance">
       <div class="container">
         <div class="section-head">
-          <h2 class="h2">Common Questions</h2>
+          <p class="eyebrow">Performance SportPsych</p>
+          <h2>Train the mind like you train the body.</h2>
+          <p>
+            Our performance services aim to deepen your understanding of how to thrive in sport
+            while building fulfillment, meaning, and purpose through participation.
+          </p>
         </div>
 
-        <div class="faq" data-accordion>
-          <details class="faq-item">
-            <summary>
-              <span>I've never done therapy. Is it awkward?</span>
-              <span class="chev" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">
-              It's normal to feel nervous. My job is to make it as comfortable as possible. You don't have to "perform" or have the right words. We'll start where you are, and we'll go at your pace.
-            </div>
-          </details>
+        <div class="steps">
+          <article class="step">
+            <h3>Mindfulness & presence</h3>
+            <p>Learn skills to calm and center the mind and ground attention in the present moment.</p>
+          </article>
+          <article class="step">
+            <h3>Values & clarity</h3>
+            <p>Clarify core values and use them to facilitate optimal performance and consistency.</p>
+          </article>
+          <article class="step">
+            <h3>Confidence & resilience</h3>
+            <p>Handle emotions with greater ease, overcome self-doubt, and rebound from adversity.</p>
+          </article>
+          <article class="step">
+            <h3>Freedom from fear</h3>
+            <p>Transform your relationship with fear and anxiety so they don’t run the game.</p>
+          </article>
+        </div>
 
-          <details class="faq-item">
-            <summary>
-              <span>What happens in the free consultation?</span>
-              <span class="chev" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">
-              It's a 15-minute phone call. You can tell me briefly what's going on, and I can explain how I work. If we seem like a good fit, we schedule a first session. If not, I can help point you toward other resources.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Do you see teenagers?</span>
-              <span class="chev" aria-hidden="true"></span>
-            </summary>
-            <div class="faq-body">
-              Yes, I work with pre-teens and teenagers, often involving family dynamics to ensure support continues at home.
-            </div>
-          </details>
+        <div class="cta-slab" role="region" aria-label="Performance call to action">
+          <div>
+            <h3 class="cta-title">Ready to build a relaxed, alert mindset?</h3>
+            <p class="cta-text">Reach out and we’ll guide you to the best starting point for your needs.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="location">
+    <!-- CONSULTING -->
+    <section class="section" id="consulting">
       <div class="container">
-         <div class="section-head">
-          <h2 class="h2">Office Location</h2>
-          <p class="lead">A quiet, private space in Santa Monica.</p>
-        </div>
-        <div class="map-wrap">
-          <iframe
-            title="Map: 270 26th Street, Suite 204, Santa Monica, CA 90402"
-            loading="lazy"
-            src="https://www.google.com/maps?q=270%2026th%20Street%20Suite%20204%20Santa%20Monica%20CA%2090402&output=embed">
-          </iframe>
-        </div>
-        <p class="fine centered">Serving Santa Monica, Venice, Brentwood, Bel Air, and wider Los Angeles.</p>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="contact" aria-label="Contact">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <h2 class="h2 h2-invert">Let’s connect.</h2>
-          <p class="lead lead-invert">
-            You don't have to carry it all alone. Call or email to start the conversation.
-          </p>
-
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="tel:+13102542304">Call (310) 254-2304</a>
-            <a class="btn btn-ghost btn-ghost-invert" href="mailto:hello@example.com">Email Me</a>
-          </div>
-
-          <div class="contact-details">
-            <p><strong>Emily Caroline Pernoll, MA, LMFT</strong></p>
-            <p>270 26th Street, Suite 204<br>Santa Monica, CA 90402</p>
-          </div>
-
-          <p class="fine" style="opacity: 0.7;">
-            Note: If you are in immediate crisis or danger, please call 911 or the 988 Crisis Lifeline immediately.
+        <div class="section-head">
+          <p class="eyebrow">Consulting</p>
+          <h2>Support for teams, programs, and organizations.</h2>
+          <p>
+            Dr. Mike regularly consults with athletic teams and organizations on mental health,
+            mindfulness, high-performance mental skills, and stress reduction.
           </p>
         </div>
 
-        <form class="form" action="#" method="post">
-          <p class="form-title">Request a Consultation</p>
-          
-          <label class="field">
-            <span class="label">Name</span>
-            <input class="input" type="text" name="name" required />
-          </label>
+        <div class="cards-3">
+          <article class="card card-outline">
+            <h3>Team consultation</h3>
+            <p>Workshops, presentations, and ongoing programming to support mental health and performance.</p>
+          </article>
 
-          <label class="field">
-            <span class="label">Email or Phone</span>
-            <input class="input" type="text" name="contact" required />
-          </label>
+          <article class="card card-outline">
+            <h3>Organizational consultation</h3>
+            <p>Strategies and tools tailored to your culture, goals, and unique needs so your people flourish.</p>
+          </article>
 
-          <label class="field">
-            <span class="label">How can I help? (Briefly)</span>
-            <textarea class="input textarea" name="message" rows="4"></textarea>
-          </label>
+          <article class="card card-outline">
+            <h3>Train the trainer</h3>
+            <p>Education for counseling teams, mental health providers, and performance coaches on best practices.</p>
+          </article>
+        </div>
 
-          <button class="btn btn-primary btn-full" type="submit">Send Request</button>
-        </form>
+        <div class="mini-cta">
+          <a class="btn btn-ghost" href="#contact">Discuss a workshop</a>
+          <a class="btn btn-primary" href="#contact">Request consulting</a>
+        </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-copy">
+            <h2>Book an appointment</h2>
+            <p>
+              Fill out the form and a member of the TriState SportPsych team will contact you within 24 hours.
+            </p>
+
+            <div class="contact-cards" aria-label="Contact details">
+              <div class="contact-card">
+                <p class="cc-title">Office</p>
+                <p class="cc-body">30 Chatham Road #803<br>Short Hills, NJ 07078</p>
+              </div>
+              <div class="contact-card">
+                <p class="cc-title">Email</p>
+                <p class="cc-body"><a href="mailto:team@tristatesportpsych.com">team@tristatesportpsych.com</a></p>
+              </div>
+              <div class="contact-card">
+                <p class="cc-title">Phone</p>
+                <p class="cc-body"><a href="tel:+19089130637">908-913-0637</a></p>
+              </div>
+            </div>
+
+            <div class="social" aria-label="Social links">
+              <a class="social-link" href="https://www.instagram.com/drmike_thesportpsych/" target="_blank" rel="noopener">Instagram</a>
+              <a class="social-link" href="#" aria-disabled="true">Twitter</a>
+              <a class="social-link" href="#" aria-disabled="true">LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="form" action="#" method="post" aria-label="Appointment request form">
+            <div class="field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit">Send</button>
+
+            <p class="form-note">
+              By submitting, you agree to be contacted by our team. If this is an emergency, call 911 or your local emergency number.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-inner">
-        <p class="footer-brand">Emily Caroline Pernoll, MA, LMFT</p>
-        <p class="footer-fine">
-          © <span id="year">2026</span> · Licensed in California (#97635)
-        </p>
+        <p class="fine">© 2017–2026 TriState SportPsych. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#clinical">Clinical</a>
+          <a href="#performance">Performance</a>
+          <a href="#consulting">Consulting</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </footer>
-
-    <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M18 15l-6-6-6 6"/>
-      </svg>
-    </a>
-
   </main>
-
-  <script>
-    // Toggle Menu Function
-    function toggleMobileMenu() {
-      const menu = document.getElementById('navMenu');
-      const btn = document.getElementById('navToggle');
-      
-      // Toggle class
-      menu.classList.toggle('is-open');
-      
-      // Update ARIA
-      const isOpen = menu.classList.contains('is-open');
-      btn.setAttribute('aria-expanded', isOpen);
-    }
-
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const menu = document.getElementById('navMenu');
-        const btn = document.getElementById('navToggle');
-        menu.classList.remove('is-open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // Back to Top Logic
-    const backToTopBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        backToTopBtn.classList.add('visible');
-      } else {
-        backToTopBtn.classList.remove('visible');
-      }
-    });
-
-    // Dynamic Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
