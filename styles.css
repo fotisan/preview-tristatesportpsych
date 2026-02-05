@@ -8,9 +8,10 @@
   --stroke: rgba(255,255,255,.14);
   --stroke-2: rgba(255,255,255,.18);
 
-  --text: rgba(255,255,255,.92);
-  --muted: rgba(255,255,255,.70);
-  --faint: rgba(255,255,255,.56);
+  /* ΑΛΛΑΓΗ: Αυξημένο contrast για καλύτερη αναγνωσιμότητα (Accessibility) */
+  --text: rgba(255,255,255,.95); 
+  --muted: rgba(255,255,255,.82); /* Ήταν .70 - τώρα διαβάζεται πιο εύκολα */
+  --faint: rgba(255,255,255,.60);
 
   --accent: #7C5CFF;
   --accent2:#25D6FF;
@@ -38,10 +39,11 @@ html{ scroll-behavior:smooth; }
 body{
   margin:0;
   color:var(--text);
+  /* ΑΛΛΑΓΗ: Ελαφρώς πιο ήπια gradients για λιγότερο οπτικό θόρυβο */
   background:
-    radial-gradient(900px 500px at 20% 0%, rgba(124,92,255,.22), transparent 60%),
-    radial-gradient(800px 520px at 90% 10%, rgba(37,214,255,.20), transparent 58%),
-    radial-gradient(900px 600px at 60% 95%, rgba(43,228,167,.10), transparent 55%),
+    radial-gradient(900px 500px at 20% 0%, rgba(124,92,255,.18), transparent 60%),
+    radial-gradient(800px 520px at 90% 10%, rgba(37,214,255,.16), transparent 58%),
+    radial-gradient(900px 600px at 60% 95%, rgba(43,228,167,.08), transparent 55%),
     linear-gradient(180deg, var(--bg), var(--bg2));
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Apple Color Emoji","Segoe UI Emoji";
   line-height: var(--lh);
@@ -84,7 +86,7 @@ img{ max-width:100%; height:auto; display:block; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(16px);
-  background: rgba(7,10,18,.55);
+  background: rgba(7,10,18,.65); /* Λίγο πιο σκούρο για contrast */
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .header-inner{
