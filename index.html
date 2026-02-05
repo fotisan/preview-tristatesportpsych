@@ -359,6 +359,40 @@
     </footer>
   </main>
 
-  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.nav');
+        const body = document.body;
+        const navLinks = document.querySelectorAll('.nav-link');
+      
+        if (!navToggle || !nav) return;
+      
+        // Toggle menu logic
+        navToggle.addEventListener('click', () => {
+          const isOpened = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', !isOpened);
+          nav.classList.toggle('is-active');
+          navToggle.classList.toggle('is-active');
+          
+          // Prevent scrolling when menu is open
+          if (!isOpened) {
+            body.style.overflow = 'hidden';
+          } else {
+            body.style.overflow = '';
+          }
+        });
+      
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('is-active');
+            navToggle.classList.remove('is-active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            body.style.overflow = '';
+          });
+        });
+    });
+  </script>
 </body>
 </html>
