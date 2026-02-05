@@ -1,20 +1,21 @@
 /* styles.css */
-/* LIGHT MODE - Clinical, Clean, Warm Professional */
+/* LIGHT MODE - Dark Header Edition */
 
 :root{
-  /* New Color Palette adjusted for Logo Match */
-  --bg: #F7F5F0;       /* Warm off-white */
-  --surface: #FFFFFF;  /* Cards */
-  --text: #0F172A;     /* Deep slate (Primary text) */
-  --muted: #475569;    /* Muted text */
+  /* Colors */
+  --bg: #F7F5F0;       
+  --surface: #FFFFFF;  
+  --text: #0F172A;     /* Dark Slate */
+  --muted: #475569;    
   
-  /* COLORS UPDATED TO MATCH LOGO */
-  --cta: #2C6E91;      /* Steel Blue (Matches "SPORTPSYCH" text but darker for contrast) */
-  --accent: #6B9080;   /* Sage Green (Matches the "TS" logo top part) */
+  /* Brand Colors */
+  --cta: #2C6E91;      /* Steel Blue */
+  --accent: #6B9080;   /* Sage Green */
   
-  --border: #E5E7EB;   /* Borders */
+  --border: #E5E7EB;   
+  --header-bg: #0F172A; /* ΝΕΟ: Dark Header Background */
 
-  /* Shadows for Light Mode (Softer) */
+  /* Shadows */
   --shadow: 0 4px 20px -2px rgba(0,0,0,0.08);
   --shadow2: 0 2px 8px -2px rgba(0,0,0,0.05);
 
@@ -36,7 +37,6 @@ body{
   margin:0;
   color:var(--text);
   background-color: var(--bg);
-  /* Adjusted gradient to be extremely subtle using new brand colors */
   background-image: radial-gradient(at 100% 0%, rgba(107, 144, 128, 0.05) 0px, transparent 50%),
                     radial-gradient(at 0% 0%, rgba(44, 110, 145, 0.04) 0px, transparent 50%);
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -54,44 +54,53 @@ img{ max-width:100%; height:auto; display:block; }
 .skip-link{ position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
 .skip-link:focus{ left:var(--pad); top:var(--pad); width:auto; height:auto; padding:12px 16px; background:var(--cta); color:#fff; border-radius:8px; z-index:9999; font-weight:bold; }
 
-/* Header & Nav */
+/* --- HEADER & NAV (DARK THEME) --- */
 .site-header{ 
   position:sticky; top:0; z-index:100; 
-  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); 
-  background: rgba(247, 245, 240, 0.90); 
-  border-bottom:1px solid var(--border); 
+  /* Σκούρο φόντο για να αναδειχθεί το λογότυπο */
+  background: var(--header-bg);
+  border-bottom: 1px solid rgba(255,255,255,0.1); 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 .header-inner{ display:flex; align-items:center; justify-content:space-between; padding:12px 0; }
 
 .brand{ display:flex; align-items:center; gap:12px; text-decoration: none; }
 
-/* LOGO IMAGE STYLING */
 .brand-img {
-  max-height: 55px; /* Ensures logo fits nicely in header */
+  max-height: 55px; 
   width: auto;
   object-fit: contain;
 }
 
-/* Mobile Menu Styles */
+/* Hamburger needs to be WHITE now */
 .nav-toggle { display:flex; background:transparent; border:none; cursor:pointer; padding:10px; z-index:101; }
-.hamburger { display:block; position:relative; width:24px; height:2px; background:var(--text); transition:all 0.3s ease-in-out; }
-.hamburger::before, .hamburger::after { content:''; position:absolute; left:0; width:24px; height:2px; background:var(--text); transition:all 0.3s ease-in-out; }
+.hamburger { display:block; position:relative; width:24px; height:2px; background:#fff; transition:all 0.3s ease-in-out; }
+.hamburger::before, .hamburger::after { content:''; position:absolute; left:0; width:24px; height:2px; background:#fff; transition:all 0.3s ease-in-out; }
 .hamburger::before { top:-8px; }
 .hamburger::after { top:8px; }
 .nav-toggle.is-active .hamburger { background:transparent; }
 .nav-toggle.is-active .hamburger::before { transform:rotate(45deg); top:0; }
 .nav-toggle.is-active .hamburger::after { transform:rotate(-45deg); top:0; }
 
+/* Mobile Menu (Dark to match header) */
 .nav { 
   position:fixed; inset:0; 
-  background:var(--bg); 
+  background: var(--header-bg); /* Dark background */
   padding:100px 24px 40px; 
   display:flex; flex-direction:column; gap:24px; 
   transform:translateX(100%); transition:transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
   visibility:hidden; height:100dvh; 
 }
 .nav.is-active { transform:translateX(0); visibility:visible; }
-.nav a { font-size:20px; font-weight:600; padding:12px 0; border-bottom:1px solid var(--border); color: var(--text); }
+
+/* Links in menu are now WHITE */
+.nav a { 
+  font-size:20px; font-weight:500; padding:12px 0; 
+  border-bottom:1px solid rgba(255,255,255,0.1); 
+  color: rgba(255,255,255,0.8); 
+}
+.nav a:hover { color: #fff; }
+
 .nav-cta{ 
   background:var(--cta); 
   color:#fff !important; 
@@ -100,8 +109,10 @@ img{ max-width:100%; height:auto; display:block; }
   text-align:center; 
   margin-top:12px; 
   border:none !important; 
-  box-shadow: 0 4px 12px rgba(44, 110, 145, 0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
+/* --- REST OF THE SITE (LIGHT THEME) --- */
 
 /* Hero */
 .hero{ padding:clamp(40px, 8vw, 80px) 0 40px; }
@@ -112,7 +123,7 @@ img{ max-width:100%; height:auto; display:block; }
   padding:6px 12px; border-radius:99px; 
   border:1px solid var(--accent); 
   background: rgba(107, 144, 128, 0.1); 
-  color: #4A6359; /* Darker sage for text readability */
+  color: #4A6359; 
   font-size:13px; font-weight:600; margin-bottom:20px; 
 }
 
@@ -209,7 +220,7 @@ img{ max-width:100%; height:auto; display:block; }
 .panel p{ margin:0 0 12px; color:var(--muted); }
 
 .panel-accent{ 
-  background: #EFFCF9; /* Very light sage tint */
+  background: #EFFCF9; 
   border-color: #D1E5E0; 
 }
 
@@ -284,7 +295,7 @@ img{ max-width:100%; height:auto; display:block; }
 .inline-actions{ display:flex; gap:16px; margin-top:24px; }
 .aside-card{ 
   border-radius:var(--r-lg); 
-  background: #E8F4F8; /* Light Steel Blue tint */
+  background: #E8F4F8; 
   padding:32px; 
   color: var(--text);
 }
@@ -367,8 +378,8 @@ input:focus, textarea:focus, select:focus {
     background:transparent; flex-direction:row; height:auto; 
     padding:0; gap:32px; 
   }
-  .nav a { font-size:15px; border:none; padding:8px 12px; color:var(--muted); font-weight: 500; }
-  .nav a:hover { color:var(--cta); background: rgba(44, 110, 145, 0.05); border-radius:6px; }
+  .nav a { font-size:15px; border:none; padding:8px 12px; color: rgba(255,255,255,0.85); font-weight: 500; }
+  .nav a:hover { color: #fff; background: rgba(255,255,255,0.1); border-radius:6px; }
   .nav-cta { margin-top:0; font-size: 14px; }
   
   .hero-grid{ grid-template-columns:1.1fr 0.9fr; align-items:start; }
